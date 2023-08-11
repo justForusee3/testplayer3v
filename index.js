@@ -47,8 +47,10 @@ function loadAAMPVideo() {
     //     console.error('Error attempting to enable full-screen mode:', error);
     // });
 
-    var playButton = document.getElementById('playButton');
+    
 }
+
+var playButton = document.getElementById('playButton');
 
 playButton.addEventListener("keydown", function(event) {
     if (event.keyCode === 13) { // Enter key
