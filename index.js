@@ -10,13 +10,6 @@ function loadAAMPVideo() {
     video.src = url;
     video.play();
     video.style.display = "block";
-
-    // Hide the "Play" button and make the video full screen
-    var container = document.getElementById("container");
-    // container.style.display = "none";
-    video.requestFullscreen().catch(err => {
-        console.error('Error attempting to enable full-screen mode:', err);
-    });
 }
 
 var playButton = document.getElementById("playButton");
