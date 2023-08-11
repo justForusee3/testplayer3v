@@ -13,13 +13,15 @@ function loadAAMPVideo() {
 
     // Hide the "Play" button and make the video full screen
     var container = document.getElementById("container");
-    container.style.display = "none";
-    video.requestFullscreen().catch(err => {
-        console.error('Error attempting to enable full-screen mode:', err);
-    });
+    // container.style.display = "none";
+    // video.requestFullscreen().catch(err => {
+    //     console.error('Error attempting to enable full-screen mode:', err);
+    // });
 }
 
-document.addEventListener("keydown", function(event) {
+var playButton = document.getElementById("playButton");
+
+playButton.addEventListener("keydown", function(event) {
     if (event.keyCode === 13) { // Enter key
         loadAAMPVideo();
     }
