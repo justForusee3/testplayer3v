@@ -23,8 +23,6 @@ playButton.addEventListener("keydown", function(event) {
 
 
 
-
-
 // Single component
 
 // var url = "aamps://dash.akamaized.net/dash264/TestCasesMCA/dolby/3/1/ChID_voices_20_128_ddp.mpd";
