@@ -1,4 +1,4 @@
-/* body {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,11 +32,11 @@ video {
     height: auto;
     display: none;
 }
- */
 
 
 
 
+/* 
 body {
     display: flex;
     justify-content: center;
@@ -106,3 +106,4 @@ body {
     background: #030b17;
  } */
 
+ */
