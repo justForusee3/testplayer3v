@@ -62,7 +62,7 @@ body {
 } */
 
 
-.video-card-container {
+/* .video-card-container {
     border: 1px solid green;
     position: relative;
     width: 92%;
@@ -73,7 +73,7 @@ body {
     margin-bottom: 20px;
     justify-content: space-between;
  }
-
+ */
 
  .video-container {
     position: relative;
@@ -81,10 +81,10 @@ body {
     margin: 0 auto;
  }
 
- .dash-video {
+/*  .dash-video {
     width: 100%;
     height: auto;
- }
+ } */
 
 
  .play-button {
