@@ -75,12 +75,12 @@ body {
  }
  */
 
- .video-container {
+/*  .video-container {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
  }
-
+ */
 /*  .dash-video {
     width: 100%;
     height: auto;
@@ -100,7 +100,7 @@ body {
     cursor: pointer;
  }
  
- .video-card {
+/*  .video-card {
     position: relative;
     min-width: calc(100%/5 - 10px);
     width: calc(100%/5 - 10px);
@@ -108,5 +108,5 @@ body {
     border-radius: 5px;
     overflow: hidden;
     background: #030b17;
- }
+ } */
 
