@@ -1,13 +1,15 @@
-var url = "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8";
-var player;
+// var url = "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8";
+// var player;
 
-window.onload = function() {
-    player = new AAMPMediaPlayer();
-}
+// window.onload = function() {
+//     player = new AAMPMediaPlayer();
+// }
 
 function loadAAMPVideo() {
-    var video = document.getElementById("video");
-    player.load(url);
+    var url = "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8";
+      window.onload = function() {
+         var player = new AAMPMediaPlayer();
+         player.load(url);
     video.style.display = "block";
 }
 
