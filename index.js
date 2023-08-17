@@ -12,8 +12,8 @@
             video.play();
 
             // Hide the language container when video starts playing
-            var languageContainer = document.getElementById("languageContainer");
-            languageContainer.style.display = "none";
+            // var languageContainer = document.getElementById("languageContainer");
+            // languageContainer.style.display = "none";
             videoCardContainer.style.height = "100vh";
 
             // Enter fullscreen mode when video starts playing
