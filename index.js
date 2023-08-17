@@ -7,44 +7,29 @@
 
         function loadAAMPVideo() {
             var video = document.getElementById("video");
+            var videoCardContainer = document.getElementById("videoCardContainer");
             video.src = url;
-            video.style.display = "block";
+
+            // Play video and request fullscreen
             video.play();
-
-            // Hide the language container when video starts playing
-            var languageContainer = document.getElementById("languageContainer");
-            languageContainer.style.display = "none";
-            videoCardContainer.style.height = "100vh";
-
-            // Enter fullscreen mode when video starts playing
             video.requestFullscreen().catch(function(error) {
                 console.log("Fullscreen request failed:", error);
             });
-         video.addEventListener("ended", videoPlaybackEnded);
-         
-        }
-    function videoPlaybackEnded() {
-            // Restore the container's height and show the language container
-            var videoCardContainer = document.getElementById("videoCardContainer");
-            var languageContainer = document.getElementById("languageContainer");
 
-            videoCardContainer.style.height = "10vh"; // Restore the initial height
-            languageContainer.style.display = "block"; // Show the language container
-
-            // Reset video source and display style
-            var video = document.getElementById("video");
-            video.src = "";
-            video.style.display = "none";
-
-            // Remove the event listener to prevent duplicate callbacks
-            video.removeEventListener("ended", videoPlaybackEnded);
+            // Listen for video playback completion
+            video.addEventListener("ended", function() {
+                // Exit fullscreen after video ends
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
         }
 
         var playButton = document.getElementById("playButton");
 
-        // playButton.addEventListener("click", function(event) {
-        //     loadAAMPVideo();
-        // });
+        playButton.addEventListener("click", function(event) {
+            loadAAMPVideo();
+        });
 
         playButton.addEventListener("keydown", function(event) {
             if (event.keyCode === 13) { // Enter key
