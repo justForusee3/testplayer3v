@@ -28,7 +28,7 @@ button:focus {
     border: 2px solid #007bff;
 }
 
-video {
+#video {
     max-width: 100%;
     height: auto;
     display: none;
