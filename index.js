@@ -8,17 +8,24 @@ window.onload = function() {
 function loadAAMPVideo() {
     var video = document.getElementById("video");
     video.src = url;
-    video.play();
     video.style.display = "block";
+    video.play();
+
+    // Hide the language container when video starts playing
+    var languageContainer = document.getElementById("languageContainer");
+    languageContainer.style.display = "none";
 }
 
 var playButton = document.getElementById("playButton");
+
+playButton.addEventListener("click", function(event) {
+    loadAAMPVideo();
+});
 
 playButton.addEventListener("keydown", function(event) {
     if (event.keyCode === 13) { // Enter key
         loadAAMPVideo();
     }
-    
 });
 
 
