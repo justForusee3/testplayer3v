@@ -90,12 +90,12 @@ body {
     position: relative;
     width: 92%;
     margin: auto;
-    height: 10vw;
+    height: 50vh; /* Adjust the height as needed */
     display: flex;
     margin-top: 1rem;
     margin-bottom: 20px;
     justify-content: space-between;
- }
+}
 
 
 /*  .video-container {
