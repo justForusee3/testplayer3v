@@ -31,7 +31,6 @@ button:focus {
 #video {
     max-width: 100%;
     height: auto;
-    display: none;
 }
 .language {
     margin: 0.5rem;
