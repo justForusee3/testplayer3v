@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
- <div class="multiple-languages">
+  <div class="multiple-languages" id="languageContainer">
     <ul class="language">
         <li class="language-list">KANNADA</li>
         <li class="language-list">TAMIL</li>
@@ -13,12 +13,12 @@
         <li class="language-list">ENGLISH</li>
         <li class="language-list">TELUGU</li>
     </ul>
-    </div>
+</div>
     <div id="container">
-        <video id="video" style="display:none;" controls src=""></video>
+        <video id="video" style="height:100%; width:100%; position:absolute; bottom:0; left:0" src=""></video>
+
         <button id="playButton">Play</button>
     </div>
-    
     <script src="index.js"></script>
 </body>
 </html>
