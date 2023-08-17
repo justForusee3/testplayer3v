@@ -1,15 +1,14 @@
-// var url = "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8";
-// var player;
+var url = "aamps://dash.akamaized.net/dash264/TestCasesMCA/dolby/3/1/ChID_voices_20_128_ddp.mpd";
+var player;
 
-// window.onload = function() {
-//     player = new AAMPMediaPlayer();
-// }
+window.onload = function() {
+    player = new AAMPMediaPlayer();
+}
 
 function loadAAMPVideo() {
-    var url = "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8";
-      window.onload = function() {
-         var player = new AAMPMediaPlayer();
-         player.load(url);
+    var video = document.getElementById("video");
+    video.src = url;
+    video.play();
     video.style.display = "block";
 }
 
@@ -21,7 +20,91 @@ playButton.addEventListener("keydown", function(event) {
     }
 });
 
-  
+
+
+
+
+
+// Single component
+
+// var url = "aamps://dash.akamaized.net/dash264/TestCasesMCA/dolby/3/1/ChID_voices_20_128_ddp.mpd";
+// var player;
+
+// window.onload = function() {
+//     player = new AAMPMediaPlayer();
+// }
+
+// function loadAAMPVideo() {
+//     var video = document.getElementById("videoPlayer");
+//     video.src = url;
+//     video.play();
+//     video.style.display = "block";
+
+//     // Hide the "Play" button and make the video to be in full screen
+//     // var container = document.getElementById("container");
+//     // container.style.display = "none";
+//     // video.requestFullscreen().catch(error => {
+//     //     console.error('Error attempting to enable full-screen mode:', error);
+//     // });
+
+    
+// }
+
+// var playButton = document.getElementById('playButton');
+
+// playButton.addEventListener("keydown", function(event) {
+//     if (event.keyCode === 13) { // Enter key
+//         loadAAMPVideo();
+//     }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Old Cooode
+
+// var url = "aamps://dash.akamaized.net/dash264/TestCasesMCA/dolby/3/1/ChID_voices_20_128_ddp.mpd";
+// var player;
+
+// window.onload = function() {
+//     player = new AAMPMediaPlayer();
+// }
+
+// function loadAAMPVideo() {
+//     var video = document.getElementById("video");
+//     video.src = url;
+//     video.play();
+//     video.style.display = "block";
+// }
+
+// document.addEventListener("keydown", function(event) {
+//     if (event.keyCode === 13) { // Enter key
+//         loadAAMPVideo();
+//     }
+// });
+
+// var playButton = document.getElementById("playButton");
+// playButton.addEventListener("click", loadAAMPVideo);
 
 
 
