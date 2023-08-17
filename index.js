@@ -1,4 +1,4 @@
-var url = "aamps://dash.akamaized.net/dash264/TestCasesMCA/dolby/3/1/ChID_voices_20_128_ddp.mpd";
+var url = "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8";
 var player;
 
 window.onload = function() {
@@ -7,8 +7,7 @@ window.onload = function() {
 
 function loadAAMPVideo() {
     var video = document.getElementById("video");
-    video.src = url;
-    video.play();
+    player.load(url);
     video.style.display = "block";
 }
 
@@ -19,6 +18,8 @@ playButton.addEventListener("keydown", function(event) {
         loadAAMPVideo();
     }
 });
+
+  
 
 
 
