@@ -9,27 +9,28 @@
             var video = document.getElementById("video");
             var videoCardContainer = document.getElementById("videoCardContainer");
             video.src = url;
+            container.style.height = "100vh";
 
             // Play video and request fullscreen
-            video.play();
-            video.requestFullscreen().catch(function(error) {
-                console.log("Fullscreen request failed:", error);
-            });
+            // video.play();
+            // video.requestFullscreen().catch(function(error) {
+            //     console.log("Fullscreen request failed:", error);
+            // });
 
-            // Listen for video playback completion
-            video.addEventListener("ended", function() {
-                // Exit fullscreen after video ends
-                if (document.fullscreenElement) {
-                    document.exitFullscreen();
-                }
-            });
+            // // Listen for video playback completion
+            // video.addEventListener("ended", function() {
+            //     // Exit fullscreen after video ends
+            //     if (document.fullscreenElement) {
+            //         document.exitFullscreen();
+            //     }
+            // });
         }
 
         var playButton = document.getElementById("playButton");
 
-        playButton.addEventListener("click", function(event) {
-            loadAAMPVideo();
-        });
+        // playButton.addEventListener("click", function(event) {
+        //     loadAAMPVideo();
+        // });
 
         playButton.addEventListener("keydown", function(event) {
             if (event.keyCode === 13) { // Enter key
