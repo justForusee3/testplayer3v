@@ -18,6 +18,7 @@ playButton.addEventListener("keydown", function(event) {
     if (event.keyCode === 13) { // Enter key
         loadAAMPVideo();
     }
+    
 });
 
 
