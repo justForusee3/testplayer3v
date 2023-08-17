@@ -23,9 +23,9 @@
 
         var playButton = document.getElementById("playButton");
 
-        playButton.addEventListener("click", function(event) {
-            loadAAMPVideo();
-        });
+        // playButton.addEventListener("click", function(event) {
+        //     loadAAMPVideo();
+        // });
 
         playButton.addEventListener("keydown", function(event) {
             if (event.keyCode === 13) { // Enter key
