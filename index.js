@@ -12,18 +12,28 @@
             container.style.height = "100vh";
 
             // Play video and request fullscreen
-            // video.play();
-            // video.requestFullscreen().catch(function(error) {
-            //     console.log("Fullscreen request failed:", error);
-            // });
+            video.play();
+            const videoElement = document.getElementById('video');
 
-            // // Listen for video playback completion
-            // video.addEventListener("ended", function() {
-            //     // Exit fullscreen after video ends
-            //     if (document.fullscreenElement) {
-            //         document.exitFullscreen();
-            //     }
-            // });
+if (videoElement.requestFullscreen) {
+    videoElement.requestFullscreen().catch(function(error) {
+        console.log("Fullscreen request failed:", error);
+    });
+} else if (videoElement.webkitRequestFullscreen) {
+    videoElement.webkitRequestFullscreen().catch(function(error) {
+        console.log("Fullscreen request failed:", error);
+    });
+} else if (videoElement.mozRequestFullScreen) {
+    videoElement.mozRequestFullScreen().catch(function(error) {
+        console.log("Fullscreen request failed:", error);
+    });
+} else if (videoElement.msRequestFullscreen) {
+    videoElement.msRequestFullscreen().catch(function(error) {
+        console.log("Fullscreen request failed:", error);
+    });
+} else {
+    console.log("Fullscreen not supported");
+}
         }
 
         var playButton = document.getElementById("playButton");
