@@ -13,27 +13,9 @@
 
             // Play video and request fullscreen
             video.play();
-            const videoElement = document.getElementById('video');
+           video.style.objectFit="cover"
+            
 
-if (videoElement.requestFullscreen) {
-    videoElement.requestFullscreen().catch(function(error) {
-        console.log("Fullscreen request failed:", error);
-    });
-} else if (videoElement.webkitRequestFullscreen) {
-    videoElement.webkitRequestFullscreen().catch(function(error) {
-        console.log("Fullscreen request failed:", error);
-    });
-} else if (videoElement.mozRequestFullScreen) {
-    videoElement.mozRequestFullScreen().catch(function(error) {
-        console.log("Fullscreen request failed:", error);
-    });
-} else if (videoElement.msRequestFullscreen) {
-    videoElement.msRequestFullscreen().catch(function(error) {
-        console.log("Fullscreen request failed:", error);
-    });
-} else {
-    console.log("Fullscreen not supported");
-}
         }
 
         var playButton = document.getElementById("playButton");
