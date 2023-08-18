@@ -9,7 +9,7 @@
             var video = document.getElementById("video");
             var videoCardContainer = document.getElementById("videoCardContainer");
             video.src = url;
-            container.style.height = "100vh";
+            //container.style.height = "100vh";
 
             // Play video and request fullscreen
             video.play();
