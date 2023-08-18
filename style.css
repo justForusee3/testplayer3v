@@ -28,10 +28,12 @@ button:focus {
     border: 2px solid #007bff;
 }
 
-#video {
-    max-width: 100%;
-    height: auto;
+#video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
+
 .language {
     margin: 0.5rem;
     list-style: none;
